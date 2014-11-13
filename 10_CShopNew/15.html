@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>店铺</title>
+    <link rel="stylesheet" type="text/css" href="style/base.css">
+    <link rel="stylesheet" type="text/css" href="style/myshops.css">
+
+
+</head>
+<body class="bg-gray">
+
+<!-- the top [[ -->
+<!--the titles [[-->
+<div class="sn-nav sn-block">
+    <div class="sn-nav-back"><a class="sn-iconbtn" href="#">返回</a></div>
+    <div class="sn-nav-title of">全场5折</div>
+</div>
+<div class="main-wrap">
+    <!-- banner picture scroll [[-->
+    <div class="big-pic-change">
+        <div class="sub_page_slide">
+            <ul class="slide_ul">
+                <li><a href="#"><img src="images/adv03.jpg" class="myImg" alt="图片说明"></a></li>
+                <li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>
+                <li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>
+                <li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>
+                <li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>
+            </ul>
+            <ol class="trigger">
+                <li class="cur"></li><li></li><li></li><li></li><li></li>
+            </ol>
+        </div>
+    </div>
+    <!-- banner picture scroll ]] -->
+    <!-- banner picture scroll [[-->
+    <!--<div class="big-pic-change">-->
+        <!--<div class="sub_page_slide">-->
+            <!--<ul class="slide_ul">-->
+                <!--<li><a href="#"><img src="images/adv03.jpg" class="myImg" alt="图片说明"></a></li>-->
+                <!--<li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>-->
+                <!--<li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>-->
+                <!--<li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>-->
+                <!--<li><a href="#"><img src="images/adv03.jpg" alt="图片说明"></a></li>-->
+            <!--</ul>-->
+            <!--<ol class="trigger">-->
+                <!--<li class="cur"></li><li></li><li></li><li></li><li></li>-->
+            <!--</ol>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- banner picture scroll ]] -->
+    <!-- the product pictrues [[-->
+    <div class="singer-products-con product-img">
+        <h3 class="shop-titles">女装</h3>
+        <ul class="products-list tbl-type">
+            <li class="tbl-cell">
+                <a href="#">
+                    <span class="product-images">
+                        <img lazy-src="temp/product3.jpg" alt=""/>
+                    </span>
+                    <span class="products-text">苹果iPad Air-WiFi版7英板电脑16G 苹果iPad Air-WiFi版7英板电脑16G</span>
+                    <em class="the-price">&yen;4899.00</em>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--the product pictrues ]] -->
+    <!--the singer banner [[-->
+    <div class="singer-banner product-img">
+        <a href="#"><img lazy-src="images/banner-singer.jpg" alt=""/></a>
+    </div>
+    <!--the singer banner ]]-->
+</div>
+<script type="text/javascript" src="http://script.suning.cn/javascript/mobileweb/jquery.min.js"></script>
+<script type="text/javascript" src="script/cshop.js"></script>
+<script type="text/javascript" src="script/component/wap.slidetrans.js"></script>
+<script type="text/javascript" src="script/component/cshop.slidetrans.js"></script>
+
+<script type="text/javascript">
+    (function(){
+        CShop.lazyLoad.lazyLoad(".product-img");
+        var len=document.querySelectorAll(".big-pic-change").length;
+        var silders=document.querySelectorAll(".big-pic-change");
+
+        for(var i=0; i<len; i++){
+            silders[i].setAttribute("id","J_sub_slide"+i);
+
+            CShop.bannerImage({
+                myImg:$(".myImg"),
+                listLen:$("#J_sub_slide"+i).children(".sub_page_slide").children(".slide_ul").children("li"),
+                slideUl:$("#J_sub_slide"+i).children(".sub_page_slide").children("ul")
+            });
+            //启动滑动组件
+            CShop.SlideTrans( '#J_sub_slide'+i+' .slide_ul', '#J_sub_slide'+i+' .trigger li');
+        }
+
+
+    })();
+</script>
+</body>
+</html>

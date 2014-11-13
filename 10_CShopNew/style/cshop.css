@@ -1,0 +1,88 @@
+.filter-products {
+    padding-top: 0.393rem;
+    border-bottom: none;
+}
+/*搜索区*/
+.top-white-bg .filter-banner-list .top-seacher{
+   width: 13.214rem;
+}
+.top-white-bg  .filter-banner-list .category-icon{
+   width: 8.035rem;
+}
+.top-white-bg  .filter-banner-list .category-icon a{
+    width: 3.35rem;
+}
+
+
+.filter-option {
+    padding: 0.714rem 0 1.25rem 0;
+}
+.filter-sort-tab {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    text-align: center;
+    color: #707070;
+}
+.filter-sort-tab li {
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    -webkit-box-flex: 1;
+    height: 2.75rem;
+
+}
+.filter-sort-tab li a
+{
+    display:block;
+    width:100%;
+    border-right: 1px solid #ccc;
+    height: 1rem;
+    line-height: 1rem;
+}
+.filter-sort-tab li:last-child a {
+    border-right: none;
+}
+.filter-sort-tab li.selected {
+    border-bottom: 2px solid #f50;
+    margin-bottom: -1px;
+}
+.filter-sort-tab li.selected,
+.filter-sort-tab li.selected a {
+    color: #f50;
+}
+
+.filter-sort-tab li i {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-bottom: 0.5rem solid;
+}
+.filter-sort-tab li.down i {
+    -webkit-transform: rotate(180deg);
+}
+.filter-sort-tab li.up i {
+    -webkit-transform: rotate(0deg);
+}
+
+/*活动页*/
+.active-ad{
+    padding: 0.714rem 0.714rem 0 0.714rem;
+    background: #fff;
+}
+.active-announcement-con{
+    margin: 0rem 0rem 0.7143rem 0rem;
+    border-top:none;
+    border-bottom:#ddd 1px solid;
+}
+.active-ad img{
+    width: 100%;
+    max-width: 606px;
+    min-width: 303px;
+    height: auto;
+    max-height: 350px;
+    min-height: 110px;
+}

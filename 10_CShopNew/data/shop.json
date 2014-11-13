@@ -1,0 +1,39 @@
+
+[
+	{
+		"src":"product0.jpg",
+		"name":"御泥坊美白嫩肤矿物泥浆嫩肤矿物泥浆面膜300g",
+		"price":"139",
+		"sartify":"50%"
+	},
+	{
+		"src":"product1.jpg",
+		"name":"御泥坊美白嫩肤矿物泥浆嫩肤矿物泥浆300g",
+		"price":"120",
+		"sartify":"60%"
+	},
+	{
+		"src":"product2.jpg",
+		"name":"御泥坊美白嫩肤矿物泥浆嫩肤矿物泥浆300g ",
+		"price":"110",
+		"sartify":"70%"
+	},
+	{
+		"src":"product3.jpg",
+		"name":"御泥坊美白嫩肤矿物泥浆嫩肤矿物泥浆300g ",
+		"price":"150",
+		"sartify":"80%"
+	},
+	{
+		"src":"product4.jpg",
+		"name":"御泥坊美白嫩肤矿物泥浆嫩肤矿物泥浆300g ",
+		"price":"160",
+		"sartify":"90%"
+	},
+	{
+		"src":"product5.jpg",
+		"name":"御泥坊美白嫩肤矿物泥浆嫩肤矿物泥浆300g ",
+		"price":"180",
+		"sartify":"95%"
+	}
+]
